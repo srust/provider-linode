@@ -24,6 +24,7 @@ import (
 	"github.com/linode/provider-linode/config/instancedisk"
 	"github.com/linode/provider-linode/config/instanceip"
 	"github.com/linode/provider-linode/config/instancesharedips"
+	"github.com/linode/provider-linode/config/ipv6range"
 	"github.com/linode/provider-linode/config/lkecluster"
 	"github.com/linode/provider-linode/config/nodebalancer"
 	"github.com/linode/provider-linode/config/nodebalancerconfig"
@@ -87,6 +88,7 @@ func GetProvider() *ujconfig.Provider {
 		token.Configure,
 		user.Configure,
 		volume.Configure,
+		ipv6range.Configure,
 	} {
 		configure(pc)
 	}

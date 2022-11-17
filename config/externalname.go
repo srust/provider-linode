@@ -37,6 +37,7 @@ var ExternalNameConfigs = map[string]config.ExternalName{
 	"linode_token":                    config.IdentifierFromProvider,
 	"linode_user":                     config.IdentifierFromProvider,
 	"linode_volume":                   config.IdentifierFromProvider,
+	"linode_ipv6_range":               config.IdentifierFromProvider,
 }
 
 // ExternalNameConfigurations applies all external name configs listed in the
